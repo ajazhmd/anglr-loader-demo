@@ -32,10 +32,10 @@ imports: [
 <anglr-loader 
 	[visible]="loader" 
 	[overlay]="false" 
-	[template]="loader-template">
+	[template]="loaderTemplate">
 </anglr-loader>
 
-<ng-template #loader-template>
+<ng-template #loaderTemplate>
   <img src="https://media1.giphy.com/media/3oEjI6SIIHBdRxXI40/giphy.gif?cid=790b76116006a614443ce2165a6581b2515fafb929f5bc80&rid=giphy.gif"/>
 </ng-template>
 ```

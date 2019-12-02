@@ -45,4 +45,7 @@ imports: [
 - **visible: *boolean***  - Turns loader/spinner on or off.
 - **overlay : *boolean***  - Turns overlay on and off.
 - **alwaysCenter: *boolean***  - Turns always center mode on or off.
-- **template: *TemplateRef* ** - Expects template ref object of the spinner/ loader.
+- **template: *TemplateRef*  ** - Expects template ref object of the spinner/ loader.
+
+####Report Issues
+[Angular loader issues](https://github.com/ajazhmd/anglr-loader-demo/issues "Angular loader issues")

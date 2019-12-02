@@ -1,6 +1,26 @@
 {
   "name": "anglr-loader",
-  "version": "0.0.1",
+  "version": "0.0.2",
+  "description": "anglr-loader is a generic component that provides minimilistic layout to place any loader on the screen.",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ajazhmd/anglr-loader-demo.git"
+  },
+  "private": false,
+  "keywords": [
+    "angular",
+    "loader",
+    "ajaz",
+    "generic-loader",
+    "spinner",
+    "placeholder"
+  ],
+  "author": "Ajaz Ahmed",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ajazhmd/anglr-loader-demo/issues"
+  },
+  "homepage": "https://github.com/ajazhmd/anglr-loader-demo#readme",
   "peerDependencies": {
     "@angular/common": "^7.2.0",
     "@angular/core": "^7.2.0"

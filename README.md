@@ -1,27 +1,48 @@
-# AnglrLoaderDemo
+###Description
+anglr-loader is a generic angular component that provides minimilistic layout/placeholder to place any page loader/ spinner on the screen.
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.3.4.
+### Features
 
-## Development server
+- Supports angular template as input to place loader/spinner.
+- **Overlay**: Overlya can be turned on off.
+- **Always center mode**: Always center mode makes the placeholder always appear on center. This can be configured turned on or off.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+# Installation
+Inside your angular project 
+####Run
+`$ npm install anglr-loader --save`
 
-## Code scaffolding
+####Import AnglrLoaderModule
+Add import statements to your root module.
+```javascript
+import { AnglrLoaderModule } from 'anglr-loader';
+```
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+Add AnglrLoaderModule in your imports.
+```
+imports: [
+    BrowserModule,
+    AppRoutingModule,
+    AnglrLoaderModule
+  ],
+````
 
-## Build
+#Usage
+```
+<anglr-loader 
+	[visible]="loader" 
+	[overlay]="false" 
+	[template]="loader-template">
+</anglr-loader>
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+<ng-template #loader-template>
+  <img src="https://media1.giphy.com/media/3oEjI6SIIHBdRxXI40/giphy.gif?cid=790b76116006a614443ce2165a6581b2515fafb929f5bc80&rid=giphy.gif"/>
+</ng-template>
+```
 
-## Running unit tests
+####Inputs
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+- **visible: *boolean***  - Turns loader/spinner on or off.
+- **overlay : *boolean***  - Turns overlay on and off.
+- **alwaysCenter: *boolean***  - Turns always center mode on or off.
+- **template: *TemplateRef* ** - Expects template ref object of the spinner/ loader.

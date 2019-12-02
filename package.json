@@ -9,7 +9,6 @@
   "keywords": [
     "angular",
     "loader",
-    "ajaz",
     "generic-loader",
     "spinner",
     "placeholder"
@@ -27,7 +26,9 @@
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
-    "build_lib": "ng build anglr-loader"
+    "build_lib": "ng build anglr-loader",
+    "ver_patch":"cd dist/anglr-loader && npm version patch && npm publish",
+    "lib_pub": "cd dist/anglr-loader && npm publish"
   },
   "private": false,
   "dependencies": {

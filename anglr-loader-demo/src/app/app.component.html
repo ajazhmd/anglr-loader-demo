@@ -1,0 +1,9 @@
+<h2>az-loader-demo</h2>
+<button (click)="toggleLoader()">toggle</button>
+<anglr-loader [visible]="loader" [overlay]="false" [template]="ldr">
+   
+</anglr-loader>
+
+<ng-template #ldr>
+  <img src="https://media1.giphy.com/media/3oEjI6SIIHBdRxXI40/giphy.gif?cid=790b76116006a614443ce2165a6581b2515fafb929f5bc80&rid=giphy.gif"/>
+</ng-template>

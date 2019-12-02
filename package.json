@@ -1,6 +1,6 @@
 {
   "name": "anglr-loader",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "anglr-loader is a generic component that provides minimilistic layout to place any loader on the screen.",
   "repository": {
     "type": "git",

@@ -1,6 +1,6 @@
 ###Description
 anglr-loader is a generic angular component that provides minimilistic layout/placeholder to place any page loader/ spinner on the screen.
-[Demo](https://ajazhmd.github.io/anglr-loader-demo/ "Demo")
+- [Demo](https://ajazhmd.github.io/anglr-loader-demo/ "Demo")
 
 
 ### Features

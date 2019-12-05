@@ -1,9 +1,72 @@
-<h2>az-loader-demo</h2>
-<button (click)="toggleLoader()">toggle</button>
-<anglr-loader [visible]="loader" [overlay]="false" [template]="ldr">
-   
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky">
+    <a class="navbar-brand" href="#">anglr-loader-demo</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <!-- <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a> -->
+          <button type="button" class="btn btn-primary btn-sm" (click)="toggleLoader()">Toggle loader</button>
+        </li>
+
+        <li class="nav-item">
+            <input type="checkbox" name="overlay" [(ngModel)]="overlay" /> Overlay
+        </li>
+
+        <li class="nav-item">
+            <input type="checkbox" name="alwaysCenter" [(ngModel)]="alwaysCenter" /> Always Center
+        </li>
+
+        <li class="nav-item">
+          <button  class="btn btn-outline-primary btn-sm" (click)="switchLoaders()">Switch loaders</button>
+        </li>
+    
+      </ul>
+
+    </div>
+  </nav>
+
+<div class="container" style="position: relative;">
+
+<anglr-loader 
+  [visible]="loader" 
+  [overlay]="overlay"
+  [alwaysCenter]="alwaysCenter" 
+  [template]="loaderTemplate?tmp1:tmp2">
 </anglr-loader>
 
-<ng-template #ldr>
-  <img src="https://media1.giphy.com/media/3oEjI6SIIHBdRxXI40/giphy.gif?cid=790b76116006a614443ce2165a6581b2515fafb929f5bc80&rid=giphy.gif"/>
+<ng-template #tmp2>
+  <img src="https://mir-s3-cdn-cf.behance.net/project_modules/disp/04de2e31234507.564a1d23645bf.gif"/>
 </ng-template>
+
+<ng-template #tmp1>
+  <img src="https://mir-s3-cdn-cf.behance.net/project_modules/disp/585d0331234507.564a1d239ac5e.gif"/>
+</ng-template>
+
+<p>
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus non ante rhoncus augue laoreet efficitur et ac libero. Mauris a orci dictum, vestibulum ipsum et, maximus dolor. Donec vel aliquam nunc, nec aliquet orci. Donec enim felis, lacinia at quam vel, congue auctor tortor. Nullam efficitur ligula mi, sit amet interdum magna tincidunt eget. Nunc faucibus tempor placerat. Duis ac rhoncus purus, nec aliquam elit. Aenean eget varius dui. Nunc sit amet feugiat erat.
+  </p>
+  <p>
+
+    Sed vitae placerat est. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec elit sem, iaculis in tristique sit amet, fringilla in neque. Sed eleifend diam augue, ac iaculis massa ultrices a. Praesent dapibus enim in purus maximus pulvinar. Vivamus sed ipsum mauris. Integer sed elementum nulla, vel auctor purus. Aenean sed ligula in sapien laoreet mollis id sit amet diam.
+  </p>
+  <p>    
+    Sed eu ex ut magna pharetra rutrum. Ut faucibus nibh ut elementum consectetur. Sed ullamcorper maximus dui sed egestas. Fusce erat ex, placerat at est id, condimentum molestie risus. Quisque leo mi, molestie nec metus ac, luctus vehicula orci. Integer ullamcorper vehicula tortor, id ultrices nisl molestie ut. Morbi non molestie ligula. Morbi vel elit sed turpis consectetur aliquet ac iaculis mi. Nullam varius pretium vestibulum. Maecenas sagittis commodo libero non malesuada. Cras porttitor ac metus vel luctus. Proin quis velit quis massa ornare ultrices.
+  </p>
+  <p>   
+    Donec auctor magna enim, condimentum posuere elit ornare id. Duis faucibus ipsum id nisi dapibus eleifend. Vestibulum dui nisi, varius non placerat sed, dignissim eget ipsum. Suspendisse ut sagittis nibh. Morbi mattis odio lacus, non facilisis ligula facilisis a. Nunc et orci nunc. Mauris at neque lectus. Phasellus non consectetur lorem, eget facilisis libero. Morbi ac ullamcorper ex, vitae sagittis leo. Donec varius nibh quis mi tempor mattis. Ut nec hendrerit metus.
+  </p>
+  <p>  
+    Nullam id convallis purus. Sed mauris nulla, laoreet at justo sit amet, congue efficitur augue. Aliquam erat volutpat. Nullam sagittis, magna eget tristique feugiat, risus nisl volutpat mi, in tempus turpis nulla commodo arcu. Duis vel fermentum turpis, et accumsan purus. Maecenas tristique arcu lorem, quis rutrum lorem volutpat at. Pellentesque commodo aliquet purus eget dapibus. Sed dignissim, ex eget viverra iaculis, elit velit ullamcorper magna, et malesuada quam urna hendrerit risus. Donec maximus ullamcorper tellus, at sodales ligula tincidunt nec.
+  </p><p>
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus non ante rhoncus augue laoreet efficitur et ac libero. Mauris a orci dictum, vestibulum ipsum et, maximus dolor. Donec vel aliquam nunc, nec aliquet orci. Donec enim felis, lacinia at quam vel, congue auctor tortor. Nullam efficitur ligula mi, sit amet interdum magna tincidunt eget. Nunc faucibus tempor placerat. Duis ac rhoncus purus, nec aliquam elit. Aenean eget varius dui. Nunc sit amet feugiat erat.
+    </p>
+    <p>
+  
+      Sed vitae placerat est. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec elit sem, iaculis in tristique sit amet, fringilla in neque. Sed eleifend diam augue, ac iaculis massa ultrices a. Praesent dapibus enim in purus maximus pulvinar. Vivamus sed ipsum mauris. Integer sed elementum nulla, vel auctor purus. Aenean sed ligula in sapien laoreet mollis id sit amet diam.
+    </p>
+
+
+</div>

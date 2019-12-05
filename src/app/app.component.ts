@@ -8,7 +8,17 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 'az-loader-demo';
   loader = false;
-  toggleLoader() {
+  overlay = true;
+  alwaysCenter = false;
+
+  loaderTemplate = false;
+
+  public toggleLoader() {
     this.loader = !this.loader;
   }
+
+  public switchLoaders() {
+    this.loaderTemplate = !this.loaderTemplate;
+  }
+
 }

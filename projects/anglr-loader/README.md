@@ -4,7 +4,7 @@ anglr-loader is a generic angular component that provides minimilistic layout/pl
 ### Features
 
 - Supports angular template as input to place loader/spinner.
-- **Overlay**: Overlya can be turned on off.
+- **Overlay**: Overlay can be turned on off.
 - **Always center mode**: Always center mode makes the placeholder always appear on center. This can be configured turned on or off.
 
 # Installation
